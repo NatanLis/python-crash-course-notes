@@ -1,0 +1,20 @@
+name: python-basics
+channels:
+  - defaults
+dependencies:
+  - python=3.11  # Specify the Python version you're using
+  - pip
+  # - ipykernel
+  # - numpy  # If you're using NumPy in your notebooks
+  # - pandas  # If you're using pandas in your notebooks
+  # - matplotlib  # For plotting in your notebooks
+  # - seaborn  # For advanced plotting in your notebooks
+  # - scipy  # If you need scientific computing tools
+  # - scikit-learn  # For machine learning if you're including it
+  - jupyterlab  # or jupyter if you prefer
+  - nb_conda_kernels
+  - pip:
+    - black[jupyter]
+    - notebook  # To ensure Jupyter Notebook is installed via pip
+    - jupyter_contrib_nbextensions  # For Jupyter Notebook extensions
+
